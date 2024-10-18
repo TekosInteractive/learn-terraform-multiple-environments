@@ -32,7 +32,7 @@ resource "aws_instance" "app_dev" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "${var.project_name}-dev"
+    Name = "${var.project_name}-${var.dev_prefix}"
   }
 }
 
@@ -41,6 +41,6 @@ resource "aws_instance" "app_prod" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "${var.project_name}-prod"
+    Name = "${var.project_name}-${var.prod_prefix}"
   }
 }
