@@ -3,6 +3,6 @@ resource "aws_instance" "app_prod" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "${var.project_name}-prod"
+    Name = "${var.project_name}-${var.prod_prefix}"
   }
 }

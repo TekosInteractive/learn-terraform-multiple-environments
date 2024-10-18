@@ -13,3 +13,7 @@ variable "project_name" {
   type        = string
   description = "project name"
 }
+
+variable "prod_prefix" {
+  description = "This is the environment where your webapp is deployed. qa, prod, or dev"
+}
