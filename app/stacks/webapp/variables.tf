@@ -17,3 +17,7 @@ variable "project_name" {
 variable "prefix" {
   description = "This is the environment where your webapp is deployed. qa, prod, or dev"
 }
+
+variable "ami_id" {
+  description = "AMI id for the instance"
+}

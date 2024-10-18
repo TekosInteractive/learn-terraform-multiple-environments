@@ -1,4 +1,4 @@
 region        = "eu-west-3"
-instance_type = "t2.micro"
 project_name  = "multiple-environment"
+ami_id        = "ami-045a8ab02aadf4f88"
 prefix        = "dev"
