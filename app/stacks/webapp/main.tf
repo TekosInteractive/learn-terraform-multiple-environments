@@ -3,6 +3,6 @@ resource "aws_instance" "app" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "${var.project_name}-${var.prefix}"
+    Name = "terraspace-<%= expansion(':PROJECT-:ENV') %>"
   }
 }
